@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F5F8EF">
+<meta name="description" content="Mahi's curated portfolio of short-form edits, product visuals, and motion-led stories.">
+<title>Mahi — Selected Video Work</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F5F8EF;--paper2:#EDF3E5;--forest:#08482D;--forest2:#0F6340;--mint:#DAE7C7;--ink:#101410;--muted:#5E665F;--line:rgba(8,72,45,.15);--ease:cubic-bezier(.2,.75,.25,1);--max:1380px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow-x:hidden;line-height:1.5}body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 74% 12%,rgba(175,203,152,.28),transparent 32%),radial-gradient(ellipse at 8% 62%,rgba(218,231,199,.32),transparent 38%)}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}button{color:inherit}.wrap{width:min(var(--max),calc(100% - 56px));margin-inline:auto}
+/* Minimal header; the photo can be added later by replacing the PHOTO placeholder. */
+.topbar{height:88px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(8,72,45,.09)}.brand{display:flex;align-items:center;gap:12px}.avatar{width:48px;height:48px;border:1px solid rgba(8,72,45,.25);border-radius:50%;display:grid;place-items:center;position:relative;overflow:hidden;background:linear-gradient(145deg,#fff,#e4edd9);color:var(--forest);box-shadow:inset 0 0 0 3px rgba(255,255,255,.7);font-size:8px;font-weight:800;letter-spacing:.08em}.avatar:before{content:"";position:absolute;width:1px;height:1px;box-shadow:0 -5px 0 4px rgba(8,72,45,.22);border-radius:50%;top:17px;left:50%}.avatar:after{content:"";position:absolute;width:15px;height:9px;border:1px solid rgba(8,72,45,.22);border-radius:12px 12px 5px 5px;top:25px;left:50%;transform:translateX(-50%)}.brand-text{display:flex;flex-direction:column;line-height:1.05}.brand-name{font-family:"Inter Tight",Inter,sans-serif;font-weight:800;font-size:21px;letter-spacing:-.075em}.brand-name span{color:var(--forest)}.brand-sub{margin-top:5px;color:#687468;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.nav{display:flex;align-items:center;gap:27px;font-size:12px;font-weight:700;color:#3b493f}.nav a{transition:color .2s}.nav a:hover{color:var(--forest2)}.nav .nav-contact{padding:11px 16px;background:var(--forest);color:#fff;border-radius:999px}
+/* Centered hero based on the chosen Reelmark layout. */
+.hero{text-align:center;padding:27px 0 0;position:relative}.badge{display:inline-flex;align-items:center;gap:9px;padding:9px 16px;border-radius:999px;background:var(--mint);color:var(--forest);font-size:11px;font-weight:700;letter-spacing:.015em;animation:badgePop .7s .08s var(--ease) both}.badge-dot{width:7px;height:7px;border-radius:50%;background:var(--forest);opacity:.75}.headline{font-family:"Inter Tight",Inter,sans-serif;font-size:clamp(58px,6.15vw,88px);font-weight:800;line-height:.98;letter-spacing:-.064em;margin:24px auto 20px;max-width:1100px}.headline .line{display:block;animation:lineUp .85s var(--ease) both}.headline .line:nth-child(2){animation-delay:.09s;letter-spacing:-.045em}.headline .accent{color:var(--forest)}.subline{font-size:clamp(14px,1.35vw,18px);line-height:1.65;color:var(--muted);max-width:660px;margin:0 auto;animation:fadeUp .8s .18s var(--ease) both}.scribble{position:absolute;font-family:Caveat,cursive;color:var(--forest);font-size:clamp(18px,2vw,27px);font-weight:600;line-height:1.0;pointer-events:none;opacity:.9}.scribble-left{top:185px;left:4%;transform:rotate(-11deg)}.scribble-right{top:150px;right:3.5%;transform:rotate(10deg)}.doodle{position:absolute;pointer-events:none;overflow:visible}.doodle path{fill:none;stroke:#5b8762;stroke-width:1.6;stroke-linecap:round;stroke-dasharray:260;stroke-dashoffset:260;animation:drawLine 1.6s .6s ease forwards}.doodle-right{right:3.8%;top:184px;width:104px;height:90px}.doodle-left{left:4.5%;top:215px;width:68px;height:45px}
+/* Draggable curved video row */
+.carousel-shell{position:relative;width:100vw;margin:12px 0 0;overflow:hidden;touch-action:pan-y;user-select:none;-webkit-user-select:none;cursor:grab;isolation:isolate}.carousel-shell.dragging{cursor:grabbing}.carousel-shell:before,.carousel-shell:after{content:"";position:absolute;top:0;bottom:0;width:clamp(14px,5vw,74px);z-index:5;pointer-events:none}.carousel-shell:before{left:0;background:linear-gradient(90deg,var(--paper),transparent)}.carousel-shell:after{right:0;background:linear-gradient(270deg,var(--paper),transparent)}.carousel-stage{height:clamp(375px,37vw,420px);position:relative;overflow:hidden;perspective:1000px}.portfolio-card{position:absolute;top:0;left:0;width:170px;transform-origin:50% 50%;will-change:transform,width,height;contain:layout style;cursor:default}.media-frame{position:relative;width:100%;height:270px;overflow:hidden;border-radius:15px;background:#d5e2c8;border:1px solid rgba(8,72,45,.12);box-shadow:0 9px 24px rgba(18,55,35,.045);isolation:isolate}.media-frame video{display:block;width:100%;height:100%;object-fit:cover;object-position:center;background:#d5e2c8;user-select:none;-webkit-user-drag:none}.poster-sheen{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(145deg,rgba(255,255,255,.16),transparent 39%,rgba(8,72,45,.08));mix-blend-mode:screen}.media-index{position:absolute;z-index:3;left:10px;top:10px;padding:5px 7px;background:rgba(245,248,239,.8);border:1px solid rgba(255,255,255,.7);backdrop-filter:blur(10px);border-radius:999px;color:var(--forest);font-size:9px;font-weight:800;letter-spacing:.08em;pointer-events:none}.play-overlay{position:absolute;z-index:4;left:12px;bottom:12px;width:38px;height:38px;border:1px solid rgba(255,255,255,.94);border-radius:50%;background:rgba(245,248,239,.83);backdrop-filter:blur(10px);color:var(--forest);display:grid;place-items:center;cursor:pointer;transition:transform .18s,background .18s,opacity .18s;box-shadow:0 4px 12px rgba(0,0,0,.06)}.play-overlay:hover{transform:scale(1.06);background:#fff}.play-overlay svg{width:13px;height:15px}.media-frame.is-playing .play-overlay{opacity:0;pointer-events:none}.media-frame.is-playing:hover .play-overlay{opacity:1;pointer-events:auto}.video-status{position:absolute;right:10px;bottom:16px;z-index:3;padding:4px 7px;border-radius:999px;background:rgba(10,25,16,.62);color:white;font-size:9px;opacity:0;pointer-events:none;transition:opacity .2s}.media-frame.is-playing .video-status{opacity:1}.carousel-meta{display:flex;align-items:flex-start;justify-content:space-between;gap:5px;padding:7px 8px 1px;min-height:39px;overflow:hidden}.carousel-meta-copy{min-width:0}.carousel-meta h3{font-size:11px;line-height:1.15;letter-spacing:-.025em;font-weight:800;margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.carousel-meta p{font-size:8px;line-height:1.25;margin:3px 0 0;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.portfolio-card .card-number{flex:0 0 auto;margin-top:1px;font-size:9px}.card-feedback{margin-top:7px;display:grid;gap:3px;position:relative;z-index:7;background:rgba(245,248,239,.95)}.feedback-top{display:flex;align-items:center;justify-content:space-between;gap:4px;min-height:24px}.reaction-btn{border:1px solid rgba(8,72,45,.13);border-radius:999px;background:rgba(255,255,255,.66);color:var(--forest);padding:4px 7px;display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:700;cursor:pointer;white-space:nowrap;transition:background .16s,transform .16s}.reaction-btn:hover{transform:translateY(-1px);background:#fff}.reaction-btn.liked{color:#a43f47;background:#f8e8e7;border-color:#f1c3c0}.reaction-btn .heart{font-size:13px;line-height:1}.stars{display:flex;align-items:center;gap:0;white-space:nowrap}.star-btn{font-size:14px;line-height:1;border:0;background:transparent;color:#9aa897;padding:0 1px;cursor:pointer}.star-btn.active{color:#b88735}.review-button{border:0;background:transparent;color:#54705b;display:flex;align-items:center;justify-content:space-between;gap:5px;padding:1px 2px;text-align:left;font-size:9px;font-weight:700;cursor:pointer}.review-button span:last-child{color:var(--forest);text-decoration:underline;text-underline-offset:2px}.review-button:hover{color:var(--forest2)}.stage-caption{display:flex;align-items:center;justify-content:center;gap:10px;color:#7b887d;font-size:10px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;padding:5px 0 23px}.stage-caption:before,.stage-caption:after{content:"";height:1px;width:34px;background:rgba(8,72,45,.18)}
+/* Lower page: curved showcase of 12 selected works / review counts */
+.work-section{padding:58px 0 82px;border-top:1px solid rgba(8,72,45,.10)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:23px}.section-index{color:var(--forest);font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.section-head h2{font-family:"Inter Tight",Inter,sans-serif;font-size:clamp(33px,4vw,54px);line-height:.98;letter-spacing:-.065em;margin:10px 0 0}.section-head p{max-width:440px;color:var(--muted);font-size:13px;line-height:1.75;margin:0}.work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.work-card{min-width:0;border:1px solid rgba(8,72,45,.12);background:rgba(255,255,255,.54);border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(18,55,35,.025);transition:transform .25s var(--ease),box-shadow .25s,border-color .25s}.work-card:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(17,55,35,.08);border-color:rgba(8,72,45,.22)}.work-grid .work-card .media-frame{height:auto;aspect-ratio:4/3;border:0;border-radius:0;box-shadow:none}.work-grid .work-card .media-frame video{object-fit:contain}.work-grid .work-card .play-overlay{width:43px;height:43px;bottom:14px;left:14px}.work-grid .work-card .card-content{padding:13px 14px 12px}.card-title-row{display:flex;align-items:start;justify-content:space-between;gap:10px}.card-title-row h3{font-size:15px;letter-spacing:-.025em;line-height:1.25;margin:0;font-weight:800}.card-title-row p{font-size:11px;color:var(--muted);margin:4px 0 0}.card-number{font-size:10px;font-weight:800;color:#69816b;letter-spacing:.12em}.work-grid .work-card .card-feedback{margin-top:12px;padding-top:10px;border-top:1px solid rgba(8,72,45,.1);gap:5px}.work-grid .work-card .feedback-top{min-height:28px}.work-grid .work-card .reaction-btn{padding:5px 9px;font-size:11px}.work-grid .work-card .star-btn{font-size:17px;padding:0 2px}.work-grid .work-card .review-button{font-size:10px;padding:3px 1px}.rating-copy{font-size:10px;color:var(--muted)}.notice{margin-top:19px;color:#69776c;font-size:11px;display:flex;gap:8px;align-items:start}.notice strong{color:var(--forest)}.contact-section{padding:32px 0 42px;border-top:1px solid var(--line)}.contact-row{display:flex;justify-content:space-between;align-items:center;gap:20px}.contact-row h2{font-family:"Inter Tight",sans-serif;font-size:clamp(27px,3.8vw,44px);line-height:1;letter-spacing:-.06em;margin:7px 0}.contact-row p{font-size:12px;color:var(--muted);max-width:440px;margin:0}.contact-link{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;padding:12px 18px;color:#fff;background:var(--forest);border-radius:999px;font-size:12px;font-weight:700}.contact-email{font-size:12px;color:var(--forest);font-weight:700;overflow-wrap:anywhere}.contact-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.footer{border-top:1px solid var(--line);padding:18px 0 25px;color:#788478;font-size:10px}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:18px}.footer-inner strong{color:var(--forest);letter-spacing:-.04em}
+/* Contact form — Formspree-powered and styled to match the mint portfolio. */
+.contact-section{padding:72px 0 82px;border-top:1px solid var(--line);background:linear-gradient(140deg,rgba(218,231,199,.28),rgba(255,255,255,.2) 48%,rgba(237,243,229,.72))}
+.contact-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,72px);align-items:start}
+.contact-intro{padding-top:9px}.contact-intro .section-index{display:inline-flex;align-items:center;gap:9px}.contact-intro .section-index:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--forest)}
+.contact-intro h2{font-family:"Inter Tight",Inter,sans-serif;font-size:clamp(36px,4.7vw,62px);font-weight:800;line-height:.98;letter-spacing:-.065em;max-width:520px;margin:18px 0 17px}.contact-intro h2 span{color:var(--forest)}
+.contact-intro>p{max-width:430px;font-size:14px;line-height:1.8;color:var(--muted);margin:0}
+.contact-direct{margin-top:28px;display:flex;align-items:center;gap:12px;max-width:100%;width:max-content;padding:12px 15px;border:1px solid rgba(8,72,45,.13);border-radius:15px;background:rgba(255,255,255,.57)}
+.contact-direct-mark{display:grid;place-items:center;width:36px;height:36px;flex:0 0 36px;background:var(--mint);color:var(--forest);border-radius:11px;font-size:17px}
+.contact-direct-copy{display:flex;flex-direction:column;gap:3px;min-width:0}.contact-direct-copy small{font-size:9px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:#738274}.contact-direct-copy a{font-size:12px;font-weight:700;color:var(--forest);overflow-wrap:anywhere}
+.contact-card{padding:clamp(20px,3vw,32px);border:1px solid rgba(8,72,45,.13);border-radius:24px;background:rgba(255,255,255,.75);box-shadow:0 22px 58px rgba(20,58,35,.07);backdrop-filter:blur(16px)}
+.contact-card-head{margin-bottom:22px}.contact-card-head small{font-size:9px;letter-spacing:.15em;text-transform:uppercase;font-weight:800;color:var(--forest)}.contact-card-head h3{font-family:"Inter Tight",Inter,sans-serif;font-size:clamp(24px,2.8vw,32px);line-height:1.05;letter-spacing:-.05em;margin:7px 0 0}
+.contact-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.contact-field{display:flex;flex-direction:column;gap:7px;min-width:0}.contact-field.full{grid-column:1/-1}.contact-field label{font-size:11px;color:#425347;font-weight:800}.contact-field input,.contact-field textarea{width:100%;min-width:0;border:1px solid rgba(8,72,45,.16);border-radius:12px;background:rgba(245,248,239,.7);padding:13px 14px;color:var(--ink);font:500 13px/1.45 Inter,system-ui,sans-serif;outline:none;transition:border-color .2s,box-shadow .2s,background .2s}.contact-field input::placeholder,.contact-field textarea::placeholder{color:#98a196}.contact-field input:focus,.contact-field textarea:focus{border-color:rgba(8,72,45,.56);background:#fff;box-shadow:0 0 0 4px rgba(8,72,45,.065)}.contact-field textarea{min-height:142px;resize:vertical}
+.contact-submit-row{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:18px}.contact-privacy{font-size:10px;line-height:1.5;color:#778276;max-width:210px}.contact-submit{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:13px 18px;border:0;border-radius:999px;background:var(--forest);color:#fff;font-size:12px;font-weight:800;cursor:pointer;box-shadow:0 7px 17px rgba(8,72,45,.13);transition:transform .2s,background .2s,opacity .2s}.contact-submit:hover{background:var(--forest2);transform:translateY(-2px)}.contact-submit:disabled{opacity:.65;cursor:wait;transform:none}.contact-status{margin:14px 0 0;padding:11px 13px;border-radius:11px;display:none;font-size:12px;line-height:1.5}.contact-status.show{display:block}.contact-status.success{background:#e7f3df;color:#205b35;border:1px solid #c4dfb6}.contact-status.error{background:#fff0ea;color:#8a3426;border:1px solid #f1c6b9}.form-honeypot{position:absolute!important;left:-10000px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important}
+@media(max-width:800px){.contact-section{padding:52px 0 58px}.contact-grid{grid-template-columns:1fr;gap:26px}.contact-intro h2{max-width:650px}.contact-direct{margin-top:20px}}
+@media(max-width:520px){.contact-form-grid{grid-template-columns:1fr;gap:13px}.contact-field.full{grid-column:auto}.contact-card{padding:19px;border-radius:19px}.contact-submit-row{align-items:stretch;flex-direction:column}.contact-privacy{max-width:none}.contact-submit{width:100%}.contact-intro h2{font-size:clamp(35px,11vw,48px)}.contact-direct{width:100%}.contact-direct-copy a{font-size:11px}}
+/* Modal for written reviews */
+.modal-backdrop{position:fixed;inset:0;background:rgba(12,26,17,.45);backdrop-filter:blur(8px);z-index:200;display:none;align-items:center;justify-content:center;padding:20px}.modal-backdrop.open{display:flex}.review-modal{width:min(100%,480px);background:var(--paper);border:1px solid rgba(255,255,255,.6);border-radius:22px;padding:24px;box-shadow:0 28px 90px rgba(0,0,0,.22);animation:modalIn .25s var(--ease) both}.modal-head{display:flex;justify-content:space-between;gap:15px;align-items:start}.modal-head .overline{color:var(--forest);font-size:10px;letter-spacing:.16em;font-weight:800;text-transform:uppercase}.modal-head h3{font-family:"Inter Tight",sans-serif;font-size:29px;line-height:1.03;letter-spacing:-.05em;margin:8px 0 0}.modal-close{width:35px;height:35px;border:1px solid var(--line);background:rgba(255,255,255,.7);border-radius:50%;cursor:pointer;font-size:19px}.form-label{display:block;color:#46564a;font-size:11px;font-weight:800;margin:17px 0 6px}.review-stars{display:flex;gap:5px}.review-stars button{border:0;background:transparent;color:#9ba898;font-size:29px;padding:0 2px;cursor:pointer}.review-stars button.active{color:#b88735}.review-form input,.review-form textarea{width:100%;border:1px solid rgba(8,72,45,.18);border-radius:12px;background:rgba(255,255,255,.7);padding:11px 12px;color:var(--ink);outline:none;font-size:13px}.review-form input:focus,.review-form textarea:focus{border-color:rgba(8,72,45,.55);box-shadow:0 0 0 3px rgba(8,72,45,.06)}.review-form textarea{min-height:105px;resize:vertical}.form-actions{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:16px}.form-note{font-size:10px;color:var(--muted);line-height:1.4}.submit-review{border:0;border-radius:999px;background:var(--forest);color:#fff;font-size:12px;font-weight:800;padding:12px 17px;cursor:pointer}.saved-reviews{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);max-height:170px;overflow:auto}.saved-reviews h4{font-size:11px;margin:0 0 9px;color:var(--forest)}.review-entry{padding:9px 0;border-top:1px solid rgba(8,72,45,.08)}.review-entry:first-of-type{border-top:0}.review-entry strong{font-size:11px}.review-entry .review-score{margin-left:8px;color:#b88735;letter-spacing:.05em;font-size:10px}.review-entry p{font-size:11px;color:#526055;margin:4px 0 0;overflow-wrap:anywhere}.toast{position:fixed;z-index:300;left:50%;bottom:20px;transform:translate(-50%,12px);opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;border-radius:999px;background:var(--forest);color:#fff;padding:10px 15px;font-size:12px;font-weight:700;box-shadow:0 9px 27px rgba(8,72,45,.18)}.toast.show{opacity:1;transform:translate(-50%,0)}
+/* Keep the native cursor; a restrained trailing halo avoids pointer flicker. */
+.cursor-halo{position:fixed;top:0;left:0;width:30px;height:30px;border:1px solid rgba(8,72,45,.28);border-radius:50%;pointer-events:none;z-index:150;opacity:0;transform:translate3d(-100px,-100px,0) translate(-50%,-50%);background:rgba(218,231,199,.1);box-shadow:0 0 0 5px rgba(8,72,45,.025);will-change:transform;transition:width .18s,height .18s,background .18s,border-color .18s;contain:layout style}.cursor-halo.active{width:40px;height:40px;background:rgba(218,231,199,.22);border-color:rgba(8,72,45,.48)}
+@keyframes badgePop{0%{opacity:0;transform:translateY(9px) scale(.96)}100%{opacity:1;transform:translateY(0) scale(1)}}@keyframes lineUp{0%{opacity:0;filter:blur(8px);transform:translateY(18px)}100%{opacity:1;filter:blur(0);transform:translateY(0)}}@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}@keyframes drawLine{to{stroke-dashoffset:0}}@keyframes modalIn{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:980px){.wrap{width:calc(100% - 36px)}.topbar{height:76px}.nav{gap:15px}.hero{padding-top:24px}.headline{font-size:clamp(48px,7vw,70px)}.scribble-left,.scribble-right,.doodle{display:none}.carousel-shell{margin-left:0;margin-right:0}.carousel-stage{height:365px}.work-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.section-head p{max-width:340px}}
+@media(max-width:650px){.wrap{width:calc(100% - 30px)}.topbar{height:72px}.avatar{width:41px;height:41px}.brand-name{font-size:18px}.brand-sub{font-size:8px}.nav{gap:12px;font-size:11px}.nav a:first-child{display:none}.nav .nav-contact{padding:10px 13px}.hero{padding-top:22px}.badge{font-size:10px;padding:8px 12px}.headline{font-size:clamp(38px,10vw,56px);line-height:1.01;margin:20px auto 14px;letter-spacing:-.06em}.headline .line:nth-child(2){letter-spacing:-.05em}.subline{font-size:13px;line-height:1.55;padding-inline:5px}.carousel-shell{margin-top:15px;margin-left:0;margin-right:0}.carousel-stage{height:335px}.stage-caption{font-size:8px;padding:4px 0 17px;letter-spacing:.12em}.work-section{padding:38px 0 54px}.section-head{display:block}.section-head h2{font-size:38px}.section-head p{font-size:12px;margin-top:12px}.work-grid{grid-template-columns:1fr;gap:14px}.work-grid .work-card .media-frame{aspect-ratio:4/3}.contact-row{align-items:flex-start;flex-direction:column}.footer-inner{align-items:flex-start;flex-direction:column;gap:6px}.review-modal{padding:19px}.form-actions{align-items:flex-start;flex-direction:column}.submit-review{width:100%}.cursor-halo{display:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.cursor-halo{display:none}}
+</style>
+</head>
+<body>
+<header class="topbar wrap">
+  <a class="brand" href="#top" aria-label="Mahi home"><span class="avatar" aria-label="Profile photo placeholder">PHOTO</span><span class="brand-text"><span class="brand-name">MAHI<span>.</span></span><span class="brand-sub">Selected video work</span></span></a>
+  <nav class="nav" aria-label="Main navigation"><a href="#carouselShell">Video work</a><a class="nav-contact" href="#contact">Contact ↗</a></nav>
+</header>
+<main id="top">
+  <section class="hero wrap" aria-labelledby="heroTitle">
+    <div class="badge"><span class="badge-dot"></span> MAHI · SELECTED WORK</div>
+    <h1 class="headline" id="heroTitle"><span class="line">Every frame earns</span><span class="line">its <span class="accent">attention.</span></span></h1>
+    <p class="subline">Short-form edits, product visuals and motion-led stories — shaped by rhythm, finished with intention, and made to leave the message with you.</p>
+    <div class="scribble scribble-left">Craft lives in<br>the details ↗</div>
+    <svg class="doodle doodle-left" viewBox="0 0 90 55" aria-hidden="true"><path d="M4 7 C27 6 44 22 48 43 M39 35 L48 44 L53 31"/></svg>
+    <div class="scribble scribble-right">Cut with intent</div>
+    <svg class="doodle doodle-right" viewBox="0 0 110 90" aria-hidden="true"><path d="M8 2 C76 8 94 36 80 66 C75 76 64 79 54 80 M64 70 L54 80 L67 83"/></svg>
+  </section>
+  <section class="carousel-shell" id="carouselShell" aria-label="Curved video portfolio carousel. Drag to explore, click play to watch.">
+    <div class="carousel-stage" id="carouselStage"></div>
+  </section>
+  <div class="stage-caption"><span>19 selected pieces</span><span aria-hidden="true">·</span><span>Drag to explore</span></div>
+<section class="contact-section" id="contact" aria-labelledby="contactHeading">
+  <div class="wrap contact-grid">
+    <div class="contact-intro">
+      <div class="section-index">LET'S CONNECT</div>
+      <h2 id="contactHeading">Have a project?<br><span>Let's make it matter.</span></h2>
+      <p>Tell me what you’re building, the kind of video you need, or the idea you want to bring to life. Send a message and I’ll get back to you by email.</p>
+      <div class="contact-direct"><span class="contact-direct-mark" aria-hidden="true">✉</span><span class="contact-direct-copy"><small>Prefer email?</small><a href="mailto:mahi.sightsoftsolution@gmail.com">mahi.sightsoftsolution@gmail.com</a></span></div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-card-head"><small>CONTACT FORM · MAHI</small><h3>Send me a message</h3></div>
+      <form id="contactForm" class="contact-form" action="https://formspree.io/f/xdeegwqd" method="POST">
+        <div class="form-honeypot" aria-hidden="true"><label for="contactWebsite">Leave this field empty</label><input id="contactWebsite" type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+        <input type="hidden" name="_subject" value="New portfolio enquiry — Mahi">
+        <div class="contact-form-grid">
+          <div class="contact-field"><label for="contactName">Your name *</label><input id="contactName" name="name" type="text" autocomplete="name" placeholder="e.g. Alex Morgan" maxlength="100" required></div>
+          <div class="contact-field"><label for="contactEmail">Email / Gmail *</label><input id="contactEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="254" required></div>
+          <div class="contact-field full"><label for="contactSubject">Subject *</label><input id="contactSubject" name="subject" type="text" placeholder="What would you like to create?" maxlength="160" required></div>
+          <div class="contact-field full"><label for="contactMessage">Message *</label><textarea id="contactMessage" name="message" placeholder="Share a little about your project, goals, or timeline…" maxlength="5000" required></textarea></div>
+        </div>
+        <div class="contact-submit-row"><span class="contact-privacy">Your message will be sent securely through Formspree.</span><button class="contact-submit" id="contactSubmit" type="submit">Send message <span aria-hidden="true">↗</span></button></div>
+        <p class="contact-status" id="contactStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><strong>MAHI.</strong><span>Video editing · Motion · Story-led visuals</span><span>© <span id="year"></span> Mahi</span></div></footer>
+<div class="cursor-halo" id="cursorHalo" aria-hidden="true"></div>
+<div class="modal-backdrop" id="reviewModal" role="dialog" aria-modal="true" aria-labelledby="reviewTitle">
+  <div class="review-modal">
+    <div class="modal-head"><div><div class="overline">Viewer feedback</div><h3 id="reviewTitle">Leave a thoughtful review.</h3><p id="reviewSubtitle" style="font-size:12px;color:var(--muted);margin:7px 0 0">Share a note about this video.</p></div><button class="modal-close" id="closeReview" type="button" aria-label="Close review form">×</button></div>
+    <form class="review-form" id="reviewForm">
+      <label class="form-label">Your rating</label><div class="review-stars" id="reviewStars" role="group" aria-label="Choose rating from one to five stars"><button type="button" data-rating="1" aria-label="1 star">☆</button><button type="button" data-rating="2" aria-label="2 stars">☆</button><button type="button" data-rating="3" aria-label="3 stars">☆</button><button type="button" data-rating="4" aria-label="4 stars">☆</button><button type="button" data-rating="5" aria-label="5 stars">☆</button></div>
+      <label class="form-label" for="reviewName">Name <span style="font-weight:500;color:var(--muted)">(optional)</span></label><input id="reviewName" maxlength="50" placeholder="Your name">
+      <label class="form-label" for="reviewText">Your review</label><textarea id="reviewText" maxlength="500" placeholder="What worked well in this video?" required></textarea>
+      <div class="form-actions"><span class="form-note">Saved locally in this browser only.</span><button class="submit-review" type="submit">Save review ↗</button></div>
+    </form>
+    <div class="saved-reviews" id="savedReviews" hidden><h4>Reviews saved in this browser</h4><div id="reviewList"></div></div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(() => {
+  'use strict';
+  const items = [
+    {id:1,title:'Product Visual Study',subtitle:'Clean product-led motion'},
+    {id:2,title:'Kinetic Type: Hook',subtitle:'A bold text-led opening'},
+    {id:3,title:'Minimal Motion System',subtitle:'Rhythm, lines and transitions'},
+    {id:4,title:'Visual Texture Study',subtitle:'Abstract motion experiment'},
+    {id:6,title:'Work, Reframed',subtitle:'A short-form editorial cut'},
+    {id:7,title:'WiFi Repeater Product Film',subtitle:'Product explainer · Motion design'},
+    {id:8,title:'AI Product Commentary',subtitle:'Tech-focused motion edit'},
+    {id:9,title:'Money in Motion',subtitle:'Finance-themed visual story'},
+    {id:10,title:'Quick Knowledge',subtitle:'Educational vertical reel'},
+    {id:11,title:'Camera Product Film',subtitle:'Product details and lighting'},
+    {id:12,title:'Success Sequence',subtitle:'Kinetic typography study'},
+    {id:13,title:'Tech Visual Story',subtitle:'Cinematic product showcase'},
+    {id:14,title:'Growth Signal',subtitle:'Data-led motion visual'},
+    {id:15,title:'Digital Product Showcase',subtitle:'Animated digital offer assets'},
+    {id:16,title:'AI Tool Walkthrough',subtitle:'Interface-led short-form edit'},
+    {id:17,title:'Supabase Setup Walkthrough',subtitle:'Product tutorial and screen design'},
+    {id:18,title:'Motion Design Process',subtitle:'Creative workflow in motion'},
+    {id:19,title:'Particle Form Study',subtitle:'Abstract particle animation'},
+    {id:20,title:'Project File Promo',subtitle:'Short-form creative teaser'}
+  ].map((x,index)=>({...x,displayIndex:index+1,filename:`1.${x.id}.mp4`,poster:`assets/posters/1.${x.id}.jpg`}));
+  const stage=document.getElementById('carouselStage'), shell=document.getElementById('carouselShell');
+  const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const finePointer=window.matchMedia('(pointer:fine)').matches;
+  const stateKey='mahi_portfolio_feedback_v3';
+  const demoById=new Map(items.map(v=>[v.id,v]));
+  const carouselCards=[];
+  const playIcon='<svg viewBox="0 0 16 18" aria-hidden="true"><path d="M2.5 1.8c0-.7.8-1.1 1.4-.7l10.3 6.2c.6.4.6 1.3 0 1.7L3.9 15.2c-.6.4-1.4 0-1.4-.7V1.8Z" fill="currentColor"/></svg>';
+  const pauseIcon='<svg viewBox="0 0 15 16" aria-hidden="true"><path d="M3 2h3v12H3zM9 2h3v12H9z" fill="currentColor"/></svg>';
+  const readStore=()=>{try{return JSON.parse(localStorage.getItem(stateKey)||'{}')}catch(_){return {}}};
+  const writeStore=data=>{try{localStorage.setItem(stateKey,JSON.stringify(data))}catch(_){toast('Browser storage is unavailable.')}};
+  const itemState=id=>readStore()[String(id)]||{loved:false,rating:0,reviews:[]};
+  let toastTimer;
+  function toast(message){const el=document.getElementById('toast');el.textContent=message;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),2200)}
+  function ratingStars(rating){return [1,2,3,4,5].map(n=>`<button type="button" class="star-btn ${n<=rating?'active':''}" data-rating="${n}" aria-label="Rate ${n} out of 5" aria-pressed="${n===rating}">${n<=rating?'★':'☆'}</button>`).join('')}
+  function feedbackMarkup(id){const s=itemState(id);const reviews=Array.isArray(s.reviews)?s.reviews:[];return `<div class="card-feedback"><div class="feedback-top"><button type="button" class="reaction-btn ${s.loved?'liked':''}" data-action="love" aria-pressed="${!!s.loved}"><span class="heart">${s.loved?'♥':'♡'}</span><span>${s.loved?'Loved':'Love'}</span></button><div class="stars" role="group" aria-label="Rate this video">${ratingStars(s.rating||0)}</div></div><button type="button" class="review-button" data-action="review"><span class="review-count">${reviews.length?`${reviews.length} review${reviews.length===1?'':'s'} saved`:'No reviews yet'}</span><span>Write a review ↗</span></button></div>`}
+  function refreshCard(card,id){const s=itemState(id);const reviews=Array.isArray(s.reviews)?s.reviews:[];const love=card.querySelector('[data-action="love"]');if(love){love.classList.toggle('liked',!!s.loved);love.setAttribute('aria-pressed',String(!!s.loved));love.querySelector('.heart').textContent=s.loved?'♥':'♡';love.querySelector('span:last-child').textContent=s.loved?'Loved':'Love'}card.querySelectorAll('.star-btn').forEach(b=>{const n=Number(b.dataset.rating),active=n<=Number(s.rating||0);b.classList.toggle('active',active);b.textContent=active?'★':'☆';b.setAttribute('aria-pressed',String(Number(s.rating||0)===n))});const count=card.querySelector('.review-count');if(count)count.textContent=reviews.length?`${reviews.length} review${reviews.length===1?'':'s'} saved`:'No reviews yet'}
+  function pauseOthers(current){document.querySelectorAll('video[data-portfolio-video]').forEach(v=>{if(v!==current&&!v.paused){v.pause();v.controls=false;v.closest('.media-frame')?.classList.remove('is-playing')}})}
+  function attachVideoBehavior(card,video,item){const frame=video.closest('.media-frame'),button=frame.querySelector('.play-overlay');video.dataset.portfolioVideo='true';video.preload='none';video.playsInline=true;video.controls=false;
+    button.addEventListener('click',async event=>{event.preventDefault();event.stopPropagation();if(!video.paused){video.pause();return}pauseOthers(video);video.controls=true;try{await video.play()}catch(err){video.controls=false;toast('Could not start the video. Tap play again.')}});
+    video.addEventListener('play',()=>{pauseOthers(video);frame.classList.add('is-playing');button.innerHTML=pauseIcon;button.setAttribute('aria-label','Pause '+item.title)});
+    video.addEventListener('pause',()=>{frame.classList.remove('is-playing');button.innerHTML=playIcon;button.setAttribute('aria-label','Play '+item.title);if(!video.ended)video.controls=false});
+    video.addEventListener('ended',()=>{frame.classList.remove('is-playing');video.controls=false;button.innerHTML=playIcon;button.setAttribute('aria-label','Play '+item.title)});
+  }
+  function makeCard(item,forCarousel=false){const card=document.createElement(forCarousel?'article':'article');card.className=forCarousel?'portfolio-card work-card carousel-card':'work-card';card.dataset.demo=String(item.id);card.dataset.title=item.title;
+    const media=`<div class="media-frame"><video preload="none" playsinline webkit-playsinline poster="${item.poster}" aria-label="${item.title}" data-portfolio-video><source src="assets/videos/${item.filename}" type="video/mp4"></video><div class="poster-sheen"></div><span class="media-index">${String(item.displayIndex).padStart(2,'0')} / ${items.length}</span><button class="play-overlay" type="button" aria-label="Play ${item.title}">${playIcon}</button><span class="video-status">NOW PLAYING</span></div>`;
+    card.innerHTML=media+`<div class="carousel-meta"><div class="carousel-meta-copy"><h3>${item.title}</h3><p>${item.subtitle}</p></div><span class="card-number">${String(item.displayIndex).padStart(2,'0')}</span></div>`+feedbackMarkup(item.id);
+    const video=card.querySelector('video');attachVideoBehavior(card,video,item);
+    card.querySelector('[data-action="love"]').addEventListener('click',()=>{const s=itemState(item.id);s.loved=!s.loved;const all=readStore();all[String(item.id)]={...s};writeStore(all);[...document.querySelectorAll(`[data-demo="${item.id}"]`)].forEach(c=>refreshCard(c,item.id));toast(s.loved?'Added to your favourites':'Reaction removed')});
+    card.querySelectorAll('.star-btn').forEach(b=>b.addEventListener('click',()=>{const all=readStore(),s=itemState(item.id);s.rating=Number(b.dataset.rating);all[String(item.id)]={...s};writeStore(all);[...document.querySelectorAll(`[data-demo="${item.id}"]`)].forEach(c=>refreshCard(c,item.id));toast(`Your rating: ${s.rating}/5`)}));
+    card.querySelector('[data-action="review"]').addEventListener('click',()=>openReview(item.id));
+    stage.appendChild(card);carouselCards.push({card,item,video,frame:card.querySelector('.media-frame')});
+    return card;
+  }
+  items.forEach(item=>makeCard(item,true));
+  document.getElementById('year').textContent=new Date().getFullYear();
+  // Contact form posts to the Formspree endpoint without leaving the portfolio page.
+  const contactForm=document.getElementById('contactForm');
+  const contactStatus=document.getElementById('contactStatus');
+  const contactSubmit=document.getElementById('contactSubmit');
+  contactForm.addEventListener('submit',async event=>{
+    event.preventDefault();
+    if(!contactForm.reportValidity())return;
+    const honeypot=contactForm.querySelector('[name="_gotcha"]');
+    if(honeypot&&honeypot.value.trim())return;
+    const originalButton=contactSubmit.innerHTML;
+    contactSubmit.disabled=true;
+    contactSubmit.innerHTML='Sending…';
+    contactStatus.className='contact-status';
+    contactStatus.textContent='Sending your message…';
+    contactStatus.classList.add('show');
+    try{
+      const response=await fetch(contactForm.action,{method:'POST',body:new FormData(contactForm),headers:{'Accept':'application/json'}});
+      if(response.ok){
+        contactForm.reset();
+        contactStatus.className='contact-status show success';
+        contactStatus.textContent='Thank you — your message has been sent. I’ll get back to you by email.';
+      }else{
+        let detail='Please try again, or email mahi.sightsoftsolution@gmail.com directly.';
+        try{const data=await response.json();if(data.errors&&data.errors.length)detail=data.errors.map(error=>error.message).join(' ')}catch(_){}
+        contactStatus.className='contact-status show error';
+        contactStatus.textContent='The message could not be sent. '+detail;
+      }
+    }catch(_){
+      contactStatus.className='contact-status show error';
+      contactStatus.textContent='A network error stopped the message from sending. Please check your connection and try again, or email mahi.sightsoftsolution@gmail.com.';
+    }finally{
+      contactSubmit.disabled=false;
+      contactSubmit.innerHTML=originalButton;
+    }
+  });
+  // Review form: real UI + per-browser persistence. Shared visitor feedback needs a backend.
+  const modal=document.getElementById('reviewModal'),form=document.getElementById('reviewForm'),reviewText=document.getElementById('reviewText'),reviewName=document.getElementById('reviewName'),starsWrap=document.getElementById('reviewStars'),savedReviews=document.getElementById('savedReviews'),reviewList=document.getElementById('reviewList');
+  let reviewItemId=null,selectedRating=0;
+  function updateReviewStars(){starsWrap.querySelectorAll('button').forEach(b=>{const active=Number(b.dataset.rating)<=selectedRating;b.classList.toggle('active',active);b.textContent=active?'★':'☆';b.setAttribute('aria-pressed',String(Number(b.dataset.rating)===selectedRating))})}
+  function renderReviewList(){const s=itemState(reviewItemId),reviews=Array.isArray(s.reviews)?s.reviews:[];savedReviews.hidden=reviews.length===0;reviewList.innerHTML=reviews.slice().reverse().map(r=>`<div class="review-entry"><strong>${escapeHTML(r.name||'Visitor')}</strong><span class="review-score">${'★'.repeat(r.rating)}${'☆'.repeat(5-r.rating)}</span><p>${escapeHTML(r.text)}</p></div>`).join('')}
+  function escapeHTML(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+  function openReview(id){reviewItemId=id;const item=demoById.get(id);const s=itemState(id);selectedRating=s.rating||0;document.getElementById('reviewTitle').textContent='Leave a thoughtful review.';document.getElementById('reviewSubtitle').textContent=item.title+' · '+item.subtitle;reviewText.value='';reviewName.value='';updateReviewStars();renderReviewList();modal.classList.add('open');document.body.style.overflow='hidden';setTimeout(()=>reviewText.focus(),50)}
+  function closeReview(){modal.classList.remove('open');document.body.style.overflow='';reviewItemId=null}
+  document.getElementById('closeReview').addEventListener('click',closeReview);modal.addEventListener('click',e=>{if(e.target===modal)closeReview()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeReview()});starsWrap.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{selectedRating=Number(b.dataset.rating);updateReviewStars()}));
+  form.addEventListener('submit',e=>{e.preventDefault();if(!reviewItemId)return;if(!selectedRating){toast('Please choose a star rating first.');return}const text=reviewText.value.trim();if(!text){reviewText.focus();return}const all=readStore(),id=String(reviewItemId),s=all[id]||{loved:false,rating:0,reviews:[]};s.rating=selectedRating;s.reviews=Array.isArray(s.reviews)?s.reviews:[];s.reviews.push({name:reviewName.value.trim().slice(0,50),rating:selectedRating,text:text.slice(0,500),date:new Date().toISOString()});all[id]=s;writeStore(all);[...document.querySelectorAll(`[data-demo="${reviewItemId}"]`)].forEach(c=>refreshCard(c,reviewItemId));renderReviewList();reviewText.value='';toast('Review saved in this browser')});
+  // Carousel geometry: outer cards grow and tilt subtly, producing the arched Reelmark row.
+  let stageWidth=0,stageHeight=0,baseWidth=170,pitch=198,totalSpan=0,offset=0,lastTime=0,dragging=false,hovered=false,activeVideo=false,velocity=0,lastPointerX=0,lastPointerTime=0,hasDragged=false;
+  function measure(){const rect=shell.getBoundingClientRect();stageWidth=rect.width;stageHeight=stage.clientHeight;baseWidth=Math.max(104,Math.min(170,stageWidth*.118));pitch=baseWidth+(stageWidth<650?22:28);totalSpan=pitch*items.length;}
+  measure();window.addEventListener('resize',measure,{passive:true});
+  function renderCarousel(dt){const dir=stageWidth/2||1;const usable=dir*.94;carouselCards.forEach((entry,i)=>{const raw=i*pitch+offset;let t=((raw+totalSpan/2)%totalSpan+totalSpan)%totalSpan-totalSpan/2;const distance=Math.abs(t);const d=Math.min(1,distance/usable);const curveT=t*(1+.075*Math.pow(t/dir,2));const x=dir+curveT;const w=baseWidth+42*d*d;const videoH=244+67*d*d;const metaH=39;const feedbackH=52;const fullH=videoH+metaH+feedbackH;const y=stageHeight*.515-8*d*d;const tilt=-Math.sign(t)*d*9;const zrot=Math.sign(t)*d*1.5;const visible=distance<stageWidth*.5+w*.9;entry.card.style.width=w+'px';entry.card.style.height=fullH+'px';entry.card.style.zIndex=String(100-Math.round(d*50));entry.card.style.opacity=visible?'1':'0';entry.card.style.visibility=visible?'visible':'hidden';entry.card.style.pointerEvents=visible?'auto':'none';entry.card.style.transform=`translate3d(${x-w/2}px,${y-fullH/2}px,0) rotateY(${tilt}deg) rotateZ(${zrot}deg)`;entry.frame.style.height=videoH+'px';entry.card.querySelector('.media-frame video').style.objectPosition='center';});}
+  shell.addEventListener('pointerenter',()=>{hovered=true});shell.addEventListener('pointerleave',()=>{hovered=false});
+  shell.addEventListener('pointerdown',e=>{if(e.target.closest('button,video,input,textarea,a'))return;dragging=true;hasDragged=false;shell.classList.add('dragging');lastPointerX=e.clientX;lastPointerTime=performance.now();velocity=0;try{shell.setPointerCapture(e.pointerId)}catch(_){}});
+  shell.addEventListener('pointermove',e=>{if(!dragging)return;const now=performance.now(),dx=e.clientX-lastPointerX,elapsed=Math.max(1,now-lastPointerTime);if(Math.abs(dx)>1)hasDragged=true;offset+=dx;velocity=dx/(elapsed/1000);lastPointerX=e.clientX;lastPointerTime=now});
+  function releaseDrag(){if(!dragging)return;dragging=false;shell.classList.remove('dragging')}
+  shell.addEventListener('pointerup',releaseDrag);shell.addEventListener('pointercancel',releaseDrag);shell.addEventListener('lostpointercapture',releaseDrag);
+  const halo=document.getElementById('cursorHalo');let pointerX=-100,pointerY=-100,haloX=-100,haloY=-100,hasPointer=false,hoverInteractive=false;
+  if(finePointer&&!reduced){document.addEventListener('pointermove',e=>{if(e.pointerType!=='mouse')return;pointerX=e.clientX;pointerY=e.clientY;hasPointer=true;halo.style.opacity='1'});document.querySelectorAll('a,button,.portfolio-card').forEach(el=>{el.addEventListener('pointerenter',()=>{hoverInteractive=true;halo.classList.add('active')});el.addEventListener('pointerleave',()=>{hoverInteractive=false;halo.classList.remove('active')})})}
+  function frame(now){if(!lastTime)lastTime=now;const dt=Math.min(48,now-lastTime)/1000;lastTime=now;if(!reduced&&!dragging&&!activeVideo){if(Math.abs(velocity)>.7){offset+=velocity*dt;velocity*=Math.pow(.95,dt)}else{velocity=0;if(!hovered)offset-=50*dt}}else if(reduced&&!dragging){velocity=0}renderCarousel(dt);if(halo&&hasPointer&&!reduced){haloX+=(pointerX-haloX)*.18;haloY+=(pointerY-haloY)*.18;halo.style.transform=`translate3d(${haloX}px,${haloY}px,0) translate(-50%,-50%)`;}requestAnimationFrame(frame)}
+  // Playback locking across both the curved strip and the full project grid.
+  document.querySelectorAll('video[data-portfolio-video]').forEach(video=>{video.addEventListener('play',()=>{activeVideo=true;pauseOthers(video);shell.style.cursor='default'});video.addEventListener('pause',()=>{activeVideo=[...document.querySelectorAll('video[data-portfolio-video]')].some(v=>!v.paused&&!v.ended);if(!activeVideo)shell.style.cursor=dragging?'grabbing':'grab'});video.addEventListener('ended',()=>{activeVideo=false})});
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)document.querySelectorAll('video[data-portfolio-video]').forEach(v=>v.pause())});
+  renderCarousel(0);requestAnimationFrame(frame);
+  // Native cursor remains visible; no global cursor replacement or pointer-event interception.
+})();
+</script>
+</body>
+</html>
